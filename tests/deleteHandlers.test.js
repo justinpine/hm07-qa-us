@@ -2,7 +2,7 @@
 const config = require('../config');
 
 test('Status code should be 200 after kit deletion', async () => {
-    let actualStatusCode;
+	let actualStatusCode;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
 			method: 'DELETE',
