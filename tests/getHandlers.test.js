@@ -10,7 +10,7 @@ test('Should return 200 status code...', async () => {
 		console.error(error);
 	}
 	
-
+	
 	expect(actualStatusCode).toBe(200);
 });
 

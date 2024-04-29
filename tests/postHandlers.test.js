@@ -25,7 +25,7 @@ test('Status code should be 201', async () => {
 		console.error(error);
 	}
 	
-
+	
 	expect(actualStatusCode).toBe(201);
 });
 
@@ -45,6 +45,6 @@ test('Response body should contain...', async () => {
         console.error(error);
     }
 	
-	
+
 	expect(actualResponseBody["courierService"]).toBe("Order and Go");
 });
