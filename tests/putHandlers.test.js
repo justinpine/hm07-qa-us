@@ -4,36 +4,36 @@ const config = require('../config');
 const requestBody = {
 	"productsList": [
 		{
-			"id": 7,
+			"id": 8,
 			"quantity": 5
 		}
 	],
-	"name": "My Test Kit"
+	"name": "My Test Change Kit"
 };
 
 test('Status code should be 200', async () => {
-    let actualStatusCode;
+    let ResponseStatusCode;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(requestBody)
 		});
-		actualStatusCode = response.status;
+		ResponseStatusCode = response.status;
 	} catch (error) {
 		console.error(error);
 	}
 	
-	expect(actualStatusCode).toBe(200);
+	expect(ResponseStatusCode).toBe(200);
 });
 
 
 test('Response body should contain...', async () => {
     let actualResponseBody;
     try {
-        const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+        const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
