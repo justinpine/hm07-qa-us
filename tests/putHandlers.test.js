@@ -25,6 +25,7 @@ test('Status code should be 200', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	
 	expect(actualStatusCode).toBe(200);
 });
 
@@ -43,5 +44,6 @@ test('Response body should contain...', async () => {
     } catch (error) {
         console.error(error);
     }
+	
 	expect(actualResponseBody["ok"]).toBe(true);
 });

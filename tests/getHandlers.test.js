@@ -9,6 +9,7 @@ test('Should return 200 status code...', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	
 	expect(actualStatusCode).toBe(200);
 });
 
@@ -21,5 +22,6 @@ test('Body should contain...', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	
 	expect(actualResponseBody.name).toBe("For picnic");
 });

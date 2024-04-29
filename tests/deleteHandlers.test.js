@@ -11,6 +11,7 @@ test('Status code should be 200 after kit deletion', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	
 	expect(actualStatusCode).toBe(200);
 });
 
@@ -23,5 +24,6 @@ test('Deleted kit should return 404', async () => {
     } catch (error) {
         console.error(error);
     }
+	
 	expect(actualStatusCode).toBe(404);
 });
